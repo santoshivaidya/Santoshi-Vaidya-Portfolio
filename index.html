@@ -106,7 +106,6 @@
         -webkit-text-fill-color: transparent;
     }
 
-    /* Tuza juna code pan thevla tar chalel */
     header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#020617}
     .logo{font-size:24px;font-weight:bold;color:#ffffff}
     nav a{margin:0 15px;color:#fff;text-decoration:none}
@@ -117,6 +116,63 @@
 .skill-header{display:flex;justify-content:space-between;margin-bottom:8px;color:#e2e8f0;font-weight:600}
 .progress-bar{background:rgba(255,255,255,.1);height:10px;border-radius:10px;overflow:hidden}
 .progress-fill{background:linear-gradient(90deg,#00d9ff,#7c3aed);height:100%;border-radius:10px}
+.skill-item{margin-bottom:25px}
+
+/* ===== EDUCATION CARD CSS START ===== */
+#education h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  padding-left: 12px;
+  border-left: 4px solid var(--accent); /* cyan line */
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--accent), var(--accent2)); /* cyan to purple */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.education-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 0;
+}
+
+.edu-card {
+  background: var(--card);
+  border: 1px solid rgba(0, 217, 255, 0.3);
+  border-left: 4px solid var(--accent);
+  border-radius: 15px;
+  padding: 20px 25px;
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 217, 255, 0.4);
+  border-left: 4px solid var(--accent2);
+}
+
+.edu-card h3 { 
+  color: var(--text); 
+  font-size: 1.3rem; 
+  margin: 0 0 8px 0; 
+}
+
+.edu-org { 
+  color: var(--accent); /* cyan */
+  font-weight: 600; 
+  margin: 0 0 5px 0; 
+}
+
+.edu-score { 
+  color: #cbd5e1; /* light grey */
+  font-size: 1rem; 
+  margin: 0; 
+}
+/* ===== EDUCATION CARD CSS END ===== */
 </style>
     
 <body>
